@@ -1,0 +1,136 @@
+/* Contact.module.css */
+.contactSection {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactContainer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.contactTitle {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactTextarea {
+  width: 100%;
+  height: 6rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.contactButton {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 376px) {
+  .contactTitle {
+    font-size: 1.6rem;
+  }
+
+  .contactTextarea {
+    height: 7rem;
+    font-size: 0.95rem;
+  }
+
+  .contactButton {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 481px) {
+  .contactSection {
+    padding: 1.5rem;
+  }
+
+  .contactContainer {
+    padding: 1.25rem;
+  }
+
+  .contactTitle {
+    font-size: 1.8rem;
+  }
+
+  .contactTextarea {
+    height: 8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .contactSection {
+    padding: 2rem;
+  }
+
+  .contactContainer {
+    max-width: 90%;
+  }
+
+  .contactTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contactTextarea {
+    height: 9rem;
+    font-size: 1rem;
+  }
+
+  .contactButton {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .contactContainer {
+    max-width: 600px;
+  }
+
+  .contactTextarea {
+    height: 10rem;
+  }
+
+  .contactButton {
+    font-size: 1.2rem;
+  }
+}
+
+/* Global Reset (Optional - can be in global CSS) */
+.contactSection * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

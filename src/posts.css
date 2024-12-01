@@ -1,0 +1,100 @@
+/* General container styles */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #eaeae9;
+}
+
+/* Card styling */
+.posts-card {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.posts-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+/* Image Container */
+.posts-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeae9;
+}
+
+.posts-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Footer */
+.posts-footer {
+  padding: 10px 20px;
+}
+
+.posts-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posts-left-actions,
+.posts-pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.posts-like-icon {
+  cursor: pointer;
+}
+
+.posts-likes {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+/* Add Button */
+.posts-add-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .posts-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .posts-likes {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .posts-add-button {
+    width: 40px;
+    height: 40px;
+  }
+}
